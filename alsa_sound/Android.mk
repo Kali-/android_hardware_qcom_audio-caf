@@ -5,6 +5,9 @@
 
 ifeq ($(strip $(BOARD_USES_ALSA_AUDIO)),true)
 
+$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libsurround_proc_intermediates)
+$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libsurround_proc_intermediates/export_includes)
+
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
